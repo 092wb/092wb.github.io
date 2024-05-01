@@ -99,7 +99,7 @@ export default defineConfig({
     },
     footer: {
       message: "092五笔",
-      copyright: "Yima team. Copyright © 2023 Under GPLv3 license.",
+      copyright: "092wb team. Copyright © 2024 Under GPLv3 license.",
     },
     darkModeSwitchLabel: "黑暗模式",
     langMenuLabel: "选择语言",
