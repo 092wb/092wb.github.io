@@ -66,7 +66,9 @@ export default defineConfig({
           text: '入门',
           collapsed: true,
           items: [
-            { text: '取码规则', link: '/092-code/beginners/' },
+            { text: '取码规则(文字版)', link: '/092-code/beginners/' },
+            { text: '取码规则(图文版)', link: '/092-code/beginners/092help' },
+            { text: '分支', link: '/092-code/beginners/forks' },
             { text: '字集支持', link: '/092-code/beginners/ziji' },
             { text: '常见问题', link: '/092-code/beginners/wenti' },
           ]
