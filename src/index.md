@@ -28,7 +28,7 @@ features:
     details: 暂未开放
     link: /092K-code/
   - title: 092W
-    details: 暂未开放
+    details: 不良帅
     link: /092W-code/
 ---
 
