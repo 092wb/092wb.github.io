@@ -96,13 +96,13 @@ export default defineConfig({
         {
           text: '介绍',
           link: '/092K-code/',
-        }
+        },
       ],
       '/092W-code': [
         {
           text: '介绍',
           link: '/092W-code/',
-        }
+        },
       ],
     },
     footer: {
