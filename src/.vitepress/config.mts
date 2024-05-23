@@ -38,7 +38,7 @@ export default defineConfig({
         text: '092分支', items: [
           { text: '092（标准）', link: '/092-code/' },
           { text: '092K', link: '/092K-code/' },
-          { text: '092W', link: '/092W-code/' },
+          { text: '092不良帅', link: '/092W-code/' },
         ]
       },
     ],
