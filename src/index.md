@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "092五笔"
-  text: "09系第二代纯形输入方案"
+  text: "第二代纯形输入方案"
   tagline: 静待你的指尖舞动，畅享愉悦打字之旅！
   image:
     src: /icon.svg
@@ -22,7 +22,7 @@ hero:
 
 features:
   - title: 092
-    details: 标准版
+    details: 标准版（推荐）
     link: /092-code/
   - title: 092K
     details: 暂未开放
