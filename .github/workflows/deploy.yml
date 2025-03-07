@@ -1,14 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branchâ€™s name
   push:
     branches: [ main ]
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
   
-# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
@@ -22,29 +18,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # 也可以更新 checkout 版本
         with:
           fetch-depth: 0
+          
       - name: Prepare PNPM
         uses: pnpm/action-setup@v2
         with:
           version: 8
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4  # 更新 setup-node 版本
         with:
           node-version: 20
           cache: pnpm
 
       - run: pnpm i && pnpm build2
 
-      - uses: actions/configure-pages@v2
+      - uses: actions/configure-pages@v4  # 确保 configure-pages 也是最新版本
       
-      - uses: actions/upload-pages-artifact@v2
+      - uses: actions/upload-pages-artifact@v4  # 这里更新为 v4
         with:
           path: dist
           
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v2
-
+        uses: actions/deploy-pages@v4  # 也更新 deploy-pages
