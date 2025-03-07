@@ -67,5 +67,4 @@
 3. 使用跟打器练习前500、1000、1500
 
 ## 下载
-- [ QQ 群](https://qm.qq.com/q/qM1gFs3acE)（群号：7390600）
 - [永硕网盘](http://092wb.ysepan.com/)
