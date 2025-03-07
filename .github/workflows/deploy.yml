@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v4  # 也可以更新 checkout 版本
+        uses: actions/checkout@v4  # 更新到 v4
         with:
           fetch-depth: 0
           
@@ -28,19 +28,19 @@ jobs:
           version: 8
 
       - name: Setup Node
-        uses: actions/setup-node@v4  # 更新 setup-node 版本
+        uses: actions/setup-node@v4  # 更新到 v4
         with:
           node-version: 20
           cache: pnpm
 
       - run: pnpm i && pnpm build2
 
-      - uses: actions/configure-pages@v4  # 确保 configure-pages 也是最新版本
+      - uses: actions/configure-pages@v2  # 这里仍然是 v2（目前 GitHub 只有 v2）
       
-      - uses: actions/upload-pages-artifact@v4  # 这里更新为 v4
+      - uses: actions/upload-pages-artifact@v2  # 仍然使用 v2
         with:
           path: dist
           
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4  # 也更新 deploy-pages
+        uses: actions/deploy-pages@v2  # 仍然使用 v2
